@@ -9,10 +9,10 @@ class ListeVoitureService(ServiceBase):
     @rpc(_returns=Iterable(Unicode))
     def afficheListeVoiture(ctx):
         mon_json = {"voiture":
-                            [{"nom": "Citroen C1", "autonomie": 120, "temps_recharge": 20},
-                            {"nom": "Seat Ibiza", "autonomie": 150, "temps_recharge": 15},
-                            {"nom": "Renault Kadjar", "autonomie": 200, "temps_recharge": 20},
-                            {"nom": "Renault Clio", "autonomie": 100, "temps_recharge": 25}]
+                            [{"nom": "Citroen C1", "autonomie": 50, "temps_recharge": 20},
+                            {"nom": "Seat Ibiza", "autonomie": 30, "temps_recharge": 15},
+                            {"nom": "Renault Kadjar", "autonomie": 120, "temps_recharge": 20},
+                            {"nom": "Renault Clio", "autonomie": 20, "temps_recharge": 25}]
                    }
         yield u'%s' % json.dumps(mon_json)
 
